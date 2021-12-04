@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <button id="eth">Switch to ethereum</button>
+    <button id="poly">Switch to polygon</button>
+
+    <script type="module">
+      import { switchToNetwork } from "../dist/index.js";
+
+      document.getElementById("eth").addEventListener("click", () => {
+        switchToNetwork("ethereum");
+      });
+
+      document.getElementById("poly").addEventListener("click", () => {
+        switchToNetwork("polygon");
+      });
+    </script>
+  </body>
+</html>
